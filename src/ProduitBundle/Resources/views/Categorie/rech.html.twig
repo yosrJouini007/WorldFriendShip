@@ -1,0 +1,27 @@
+<h1> Search </h1>
+<form method="POST">
+    libelle <input type="text" name="libelle">
+    <input type="submit" name="submit", value="recherche">
+
+</form>
+
+<h1> Liste des catégories </h1>
+<table border ="4">
+    <tr>
+        <td>id</td>
+        <td>libelle</td>
+        <td>image</td>
+        <td>supprimer</td>
+        <td>modifier</td>
+    </tr>
+
+    {% for categorie in categories %}
+        <tr>
+            <td>{{ categorie.id }}</td>
+            <td>{{ categorie.libelle }}</td>
+            <td>{{ categorie.image }}</td>
+            <td><a href="{{ path("produit_delete",{'id':categorie.id}) }}">delete</a></td>
+            <td><a href="{{ path("produit_update",{'id':categorie.id}) }}">update</a></td>
+        </tr>
+    {% endfor %}
+</table>

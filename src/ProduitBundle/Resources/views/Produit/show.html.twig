@@ -1,0 +1,220 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!--================Banner Area =================-->
+    <section class="banner_area">
+        <div class="container">
+            <div class="banner_content">
+                <h3 title="Shop"><img class="left_img" src="img/banner/t-left-img.png" alt="">Shop<img class="right_img" src="img/banner/t-right-img.png" alt=""></h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <ul>
+                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--================End Banner Area =================-->
+
+    <!--================Shop left sidebar Area =================-->
+    <section class="shop_area product_details_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="slider_product_inner">
+                                <div class="rev_slider"  data-version="5.3.0.2" id="product_details">
+                                    <ul>
+                                        <li data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="img/shop/product-details/Product_Detail-t-1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Hola Llamigo " data-param1="Vimeo Video" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                            <!-- MAIN IMAGE -->
+                                            <img src="{{ asset('/../../../../web/images/') }}{{ produit.image }}" alt="">
+                                            <!-- LAYERS -->
+                                        </li>
+
+                                    </ul>
+                                </div><!-- END REVOLUTION SLIDER -->
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="product_details_right_content">
+                                <div class="product_details_text">
+                                    <h5>{{ produit.libelle }}</h5>
+                                    <h3>$ {{ produit.prix }}</h3>
+                                    <h4>Availability: In Stock</h4>
+                                    <p>It is a long established fact that a reader will be dis-tracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribu-tion of letters, as opposed to using 'Content here, Content here.</p>
+                                </div>
+                                <div class="color_plate">
+                                    <h4>Select Color</h4>
+                                    <ul>
+                                        <li>
+                                            <div class="squaredThree">
+                                                <input type="checkbox" value="None" id="squaredThree" name="check" />
+                                                <label for="squaredThree"></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="squaredThree">
+                                                <input type="checkbox" value="None" id="squaredfour" name="check" />
+                                                <label for="squaredfour"></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="squaredThree">
+                                                <input type="checkbox" value="None" id="squaredfive" name="check" />
+                                                <label for="squaredfive"></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="submit" value="LogIn" class="btn form-control login_btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add To Cart</button>
+                                <button type="submit" value="LogIn" class="btn form-control login_btn"><i class="fa fa-heart" aria-hidden="true"></i>Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_description">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Information</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise.
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="profile">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise.
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="messages">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="simillar_product_area">
+                        <h2>Similar Products</h2>
+                        <div class="simillar_product_slider">
+                            <div class="item">
+                                <div class="product_item">
+                                    <div class="product_img">
+                                        <img src="img/shop/product-1.jpg" alt="">
+                                        <div class="hover_icon">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h5>Product Name</h5>
+                                    <h6>$30.00</h6>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_item">
+                                    <div class="product_img">
+                                        <img src="img/shop/product-2.jpg" alt="">
+                                        <div class="hover_icon">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h5>Product Name</h5>
+                                    <h6>$30.00</h6>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_item">
+                                    <div class="product_img">
+                                        <img src="img/shop/product-3.jpg" alt="">
+                                        <div class="hover_icon">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h5>Product Name</h5>
+                                    <h6>$30.00</h6>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_item">
+                                    <div class="product_img">
+                                        <img src="img/shop/product-4.jpg" alt="">
+                                        <div class="hover_icon">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h5>Product Name</h5>
+                                    <h6>$30.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="right_sidebar_area">
+                        <aside class="s_widget categories_widget">
+                            <div class="s_title">
+                                <h4>Categories</h4>
+                                <img src="img/widget-title-border.png" alt="">
+                            </div>
+                            <ul>
+                                <li><a href="#"><img src="img/categories-list.png" alt="">Design</a></li>
+                                <li><a href="#"><img src="img/categories-list.png" alt="">Business</a></li>
+                                <li class="active"><a href="#"><img src="img/categories-list.png" alt="">Dating</a></li>
+                                <li><a href="#"><img src="img/categories-list.png" alt="">Web Design</a></li>
+                                <li><a href="#"><img src="img/categories-list.png" alt="">Featured</a></li>
+                                <li><a href="#"><img src="img/categories-list.png" alt="">Technology</a></li>
+                                <li><a href="#"><img src="img/categories-list.png" alt="">Photography</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="s_widget l_product_widget">
+                            <div class="s_title">
+                                <h4>Latest Products</h4>
+                                <img src="img/widget-title-border.png" alt="">
+                            </div>
+                            <ul>
+                                <li><a href="#"><img src="img/shop/l-product/l-product-1.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/shop/l-product/l-product-2.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/shop/l-product/l-product-3.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/shop/l-product/l-product-4.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/shop/l-product/l-product-5.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/shop/l-product/l-product-6.jpg" alt=""></a></li>
+                            </ul>
+                        </aside>
+                        <aside class="s_widget tags_widget tags_2">
+                            <div class="s_title">
+                                <h4>Tags</h4>
+                                <img src="img/widget-title-border.png" alt="">
+                            </div>
+                            <ul>
+                                <li><a href="#">E Commerce</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Art</a></li>
+                                <li><a href="#">Corporate</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Shop left sidebar Area =================-->
+
+
+
+{% endblock %}

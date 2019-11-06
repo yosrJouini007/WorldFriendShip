@@ -1,0 +1,35 @@
+produit_ajout:
+    path:     /ajout
+    defaults: { _controller: ProduitBundle:Categorie:ajout }
+
+produit_list:
+    path:     /list
+    defaults: { _controller: ProduitBundle:Categorie:list }
+
+produit_delete:
+    path:     /delete/{id}
+    defaults: { _controller: ProduitBundle:Categorie:delete }
+
+produit_update:
+    path:     /update/{id}
+    defaults: { _controller: ProduitBundle:Categorie:update }
+
+produit_recherche:
+    path:     /recherche
+    defaults: { _controller: ProduitBundle:Categorie:recherche }
+
+produit_index:
+    path:     /
+    defaults: { _controller: ProduitBundle:Produit:index }
+
+produit_new:
+    path:     /new
+    defaults: { _controller: ProduitBundle:Produit:new }
+
+produit_show:
+    path:     /show/{id}
+    defaults: { _controller: ProduitBundle:Produit:show }
+
+produit_edit:
+    path:     /edit/{id}
+    defaults: { _controller: ProduitBundle:Produit:edit }
